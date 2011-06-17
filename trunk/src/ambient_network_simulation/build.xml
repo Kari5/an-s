@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build">
+	<path id="build.classpath">
+		<pathelement location="classes"/>
+	</path>
+	<target name="init">
+		<mkdir dir="classes"/>
+	</target>
+	<target name="clean">
+		<delete dir="classes"/>
+	</target>
+	<target depends="init" name="build">
+		<javac srcdir="." destdir="classes" source="1.5" target="1.5" fork="yes">
+			<classpath refid="build.classpath"/>
+			<include name="Policy.java"/>
+			<include name="Graph.java"/>
+			<include name="TreeGraph.java"/>
+			<include name="VirtualNetwork.java"/>
+			<include name="Node.java"/>
+			<include name="ReadWriteLock.java"/>
+			<include name="Vertice.java"/>
+			<include name="TreeVertice.java"/>
+			<include name="Property.java"/>
+			<include name="Edge.java"/>
+			<include name="Simulate.java"/>
+		</javac>
+	</target>
+</project>
