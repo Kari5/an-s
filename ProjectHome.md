@@ -1,0 +1,1 @@
+Ambiens hálózat szimulátor, gráf alapú, több policy-t, azon belül több tulajdonságot tud kezelni, grafikus kiiratás
